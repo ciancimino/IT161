@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="robots" content="noindex,nofollow" />
+        <title>IT161 Test Page by Alexandra Ciancimino</title>
+        <!-- START STYLES HERE -->
+        <style>
+            img {
+                float:left;
+                margin:1em;
+            }
+
+            a {
+                color:black;
+            }
+
+            a:hover {
+                color:red;
+                background-color:yellow;
+                text-decoration:none;
+            }
+
+            footer {
+                clear:both;
+            }
+
+        </style>
+        <!-- END STYLES HERE -->
+    </head>
+    <body>
+        <header>
+            <h1>Alexandra Ciancimino's IT161 Web Page</h1>
+            <nav>
+                <a href="https://www.w3.org/" target="_blank">The W3C</a> | 
+                <a href="https://whatwg.org/" target="_blank">WHATWG Community</a> | 
+                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> | 
+                <a href="https://www.linkedin.com/learning/login" target="_blank">Linkedin Learning Library</a>
+            </nav>
+        </header>
+            <img src="images/myheadshot1.jpeg" alt="Picture of Alexandra" />
+            <p>This is my first test web page for my IT161 class. I will be testing it in my chrome broswers by clicking on he two validator links in the footer of this page. </p>
+        <footer>
+            <p><small>&copy; 2023 by 
+                Alexandra Ciancimino, All Rights Reserved ~ 
+                <a id="html-checker" href="#">Check HTML</a> ~ 
+                <a id="css-checker" href="#">Check CSS</a></small>
+            </p>
+            </footer>
+        <script>
+            //https://tinyurl.com/dynamic-html-checker
+            document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+                
+            document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+        </script>
+    </body>
+</html>
